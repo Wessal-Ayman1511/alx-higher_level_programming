@@ -6,7 +6,5 @@ for i in range(1, 101):
         print('Fizz', end=" ")
     elif (i % 5 == 0):
         print('Buzz', end=" ")
-    elif (i == 100):
-        print("")
     else:
-        print('{:d} '.format(i), end=" ")
+        print('{:d}'.format(i), end=" ")
