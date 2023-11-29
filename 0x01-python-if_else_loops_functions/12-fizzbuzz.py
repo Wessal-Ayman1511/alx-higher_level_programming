@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-for i in range(1, 101):
-    if (i % 3 == 0 and i % 5 == 0):
+for c in range(1, 101):
+    if (c % 15):
         print('FizzBuzz', end=" ")
-    elif (i % 3 == 0):
+    elif (c % 3 == 0):
         print('Fizz', end=" ")
-    elif (i % 5 == 0):
+    elif (c % 5 == 0):
         print('Buzz', end=" ")
     else:
-        print('{:d}'.format(i), end=" ")
+        print('{:d}'.format(c), end=" ")
