@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 for c in range(1, 101):
-    if (c % 15):
+    if (c % 15 == 0):
         print('FizzBuzz', end=" ")
     elif (c % 3 == 0):
         print('Fizz', end=" ")
