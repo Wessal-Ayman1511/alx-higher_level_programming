@@ -4,7 +4,7 @@ for j in range(1, 101):
         print('FizzBuzz', end=" ")
     elif j % 3 == 0:
         print('Fizz', end=" ")
-    elif c % 5 == 0:
+    elif j % 5 == 0:
         print('Buzz', end=" ")
     else:
         print('{}'.format(j), end=" ")
