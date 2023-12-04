@@ -12,19 +12,18 @@ int is_palindrome(listint_t **head)
 }
 /**
  * pal_list- function to cheack
- * @start: head
+ * @head: head
  * @end: end
  * Return: 0 or 1
 */
-int pal_list(listint_t **start, listint_t *end)
+int pal_list(listint_t **head, listint_t *end)
 {
 	if (end == NULL)
 		return (1);
-	if (pal_list(start, end->next) && (*start)->n == end->n)
+	if (pal_list(head, end->next) && (*head)->n == end->n)
 	{
-		*start = (*start)->next;
+		*head = (*head)->next;
 		return (1);
 	}
 	return (0);
 }
-
