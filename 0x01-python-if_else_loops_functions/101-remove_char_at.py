@@ -4,4 +4,4 @@ def remove_char_at(str, n):
         if i == n:
             continue
         else:
-            print("{:c}".format(str[i]), end="")
+            print("{:s}".format(str[i]), end="")
