@@ -5,4 +5,4 @@ for char in range(ord('a'), ord('z') + 1):
     elif char == ord('q'):
         continue
     else:
-        print(f"{char:c}", end="")
+        print("{:c}".format(char), end="")
