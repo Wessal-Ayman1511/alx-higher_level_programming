@@ -19,4 +19,3 @@ def list_division(my_list_1, my_list_2, list_length):
             lista.append(div)
             i += 1
     return lista
-        
