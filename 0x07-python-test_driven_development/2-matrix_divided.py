@@ -13,6 +13,8 @@ def matrix_divided(matrix, div):
         for element in rw:
             if not isinstance(element, (int, float)):
                 raise TypeError(ms_error)
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
     return [[round(elem / div, 2) for elem in rw] for rw in matrix]
 
 
