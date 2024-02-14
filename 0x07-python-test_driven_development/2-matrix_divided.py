@@ -1,5 +1,17 @@
 #!/usr/bin/python3
+""" matrix module """
+
+
 def matrix_divided(matrix, div):
+    """ function tha divide matrix
+
+    Args:
+    matrix: input
+    div: input
+
+    Return:
+    divided matrix
+    """
     ms_error = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
