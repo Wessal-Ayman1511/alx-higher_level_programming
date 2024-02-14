@@ -2,8 +2,15 @@
 
 
 >>> m1 = [[3, 6, 9], [12, 15, 18]]
->>> m2 = [[1, 2], [3, 4]]
 
 
 >>> print(matrix_divided(m1, 3))
 [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+
+>>> print(matrix_divided(None, 2))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> print(matrix_divided([[], [], []], 2))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
