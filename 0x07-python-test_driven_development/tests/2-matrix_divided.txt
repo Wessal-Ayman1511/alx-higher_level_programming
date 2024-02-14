@@ -37,3 +37,6 @@ ZeroDivisionError: division by zero
 
 >>> print(matrix_divided(m1, float('nan')))
 [[nan, nan, nan], [nan, nan, nan]]
+
+>>> print(matrix_divided(m1, float('inf')))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
