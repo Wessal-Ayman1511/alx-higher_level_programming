@@ -13,7 +13,7 @@ def matrix_divided(matrix, div):
         if not isinstance(rw, list) or len(rw) == 0:
             raise TypeError(error)
         for element in rw:
-            if type(element) not in (int, float):
+            if not isinstance(element, (int, float)):
                 raise TypeError(error)
     return [[round(elem / div, 2) for elem in rw] for rw in matrix]
 
