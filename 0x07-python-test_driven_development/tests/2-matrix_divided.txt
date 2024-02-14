@@ -40,3 +40,7 @@ ZeroDivisionError: division by zero
 
 >>> print(matrix_divided(m1, float('inf')))
 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+>>> print(matrix_divided("l", 2))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
