@@ -2,7 +2,7 @@
 def matrix_divided(matrix, div):
     ms_error = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(div, (int, float)):
-        raise TypeError('div must be a number')
+        raise TypeError("div must be a number")
     if not isinstance(matrix, list) or len(matrix) == 0:
         raise TypeError(ms_error)
     for rw in matrix:
