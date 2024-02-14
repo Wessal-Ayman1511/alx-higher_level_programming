@@ -3,3 +3,7 @@
 
 >>> say_my_name("Karim", "Ezz")
 My name is Karim Ezz
+
+>>> say_my_name(12, "wessal")
+Traceback (most recent call last):
+TypeError: first_name must be a string
