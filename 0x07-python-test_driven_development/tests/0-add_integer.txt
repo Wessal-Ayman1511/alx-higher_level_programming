@@ -1,0 +1,26 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+
+>>>add_integer(0)
+0
+>>>add_integer(2, 4)
+6
+>>>add_integer(7, 2.5)
+9
+>>>add_interger(-1, -4)
+-5
+>>>add_interger(8, -2)
+6
+>>>add_interger('x', 4)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>>add_integer(5, 'y')
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+>>> add_integer(float('inf'), 0)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
