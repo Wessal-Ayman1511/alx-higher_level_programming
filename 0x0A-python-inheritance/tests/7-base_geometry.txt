@@ -53,3 +53,7 @@ ValueError: age must be greater than 0
 Traceback (most recent call last):
 TypeError: NaN must be an integer
 
+>>> ob.integer_validator("age", True)
+Traceback (most recent call last):
+TypeError: age must be an integer
+
