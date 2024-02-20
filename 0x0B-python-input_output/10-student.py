@@ -10,9 +10,12 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
-        """ retrieves a dictionary representation of obj"""
-        if (isinstance(attrs, list) and
-                all(isinstance(x, str) for x in attrs)):
-            return {x: getattr(self, x) for x in attrs if hasattr(self, x)}
-        return self.__dict__
+    def to_json(self, attrs=None):
+        """function"""
+        if attrs is None:
+            return self.__dict__
+        dictionary = {}
+        for key, value in self.__dict__.items():
+            if key in attrs:
+                dictionary[key] = value
+        return dictionary
