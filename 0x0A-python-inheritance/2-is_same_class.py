@@ -3,5 +3,13 @@
 
 
 def is_same_class(obj, a_class):
-    """function that check if obj ininstance or not"""
+    """function that check if obj ininstance or not
+
+    Arg:
+        obj: input
+        a_class: input
+
+    Return:
+        true or false
+    """
     return type(obj) == a_class
