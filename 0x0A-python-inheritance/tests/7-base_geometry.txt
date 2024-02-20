@@ -35,4 +35,16 @@ Exception: area() is not implemented
 Traceback (most recent call last):
 TypeError: NaN must be an integer
 
->>> bg.integer_validator("Big", 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+>>> ob.integer_validator("Big", 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+
+>>> ob.integer_validator("age", (4,))
+Traceback (most recent call last):
+TypeError: age must be an integer
+
+>>> ob.integer_validator("age", None)
+Traceback (most recent call last):
+TypeError: age must be an integer
+
+>>> ob.integer_validator("age", 0)
+Traceback (most recent call last):
+ValueError: age must be greater than 0
