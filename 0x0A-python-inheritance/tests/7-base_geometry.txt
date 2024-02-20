@@ -14,3 +14,15 @@ Traceback (most recent call last):
 ValueError: distance must be greater than 0
 
 >>> ob.integer_validator("my_int", 12)
+
+>>> ob.integer_validator("number", 4.2)
+Traceback (most recent call last):
+TypeError: number must be an integer
+
+>>> ob.integer_validator("name", "Maiq")
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+>>> ob.integer_validator("width")
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
