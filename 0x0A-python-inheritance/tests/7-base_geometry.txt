@@ -9,8 +9,8 @@ ValueError: invalid literal for int() with base 10: 'inf'
 Traceback (most recent call last):
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
->>> ob.integer_validator("num", -5)
+>>> ob.integer_validator("distance", -1)
 Traceback (most recent call last):
-ValueError: number must be greater than 0
+ValueError: distance must be greater than 0
 
->>> ob.integer_validator("int", 12)
+>>> ob.integer_validator("my_int", 12)
