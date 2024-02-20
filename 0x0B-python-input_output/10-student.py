@@ -12,10 +12,10 @@ class Student:
 
     def to_json(self, attrs=None):
         """function"""
-        if attrs = None:
+        if attrs is None:
             return self.__dict__
         dic = {}
-        for key, value in sel.__dict__.items():
+        for key, value in self.__dict__.items():
             if key in attrs:
                 dict[key] = value
         return dic
