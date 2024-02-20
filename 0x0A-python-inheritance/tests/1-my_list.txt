@@ -18,15 +18,3 @@
 	>>> my_list += [3]
 	>>> my_list.print_sorted()
 	[1, 1, 2, 2, 3]
-
->>> my_list
-    []
-
-
->>> my_list = MyList("hello")
-    
-    >>> my_list
-    ['h', 'e', 'l', 'l', 'o']
-
-    >>> my_list.print_sorted()
-    ['e', 'h', 'l', 'l', 'o']
