@@ -1,3 +1,3 @@
 -- insert values
 INSERT INTO first_table
-VALUES(98, "Best School")
+VALUES(89, "Best School")
