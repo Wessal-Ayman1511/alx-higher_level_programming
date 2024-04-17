@@ -1,4 +1,4 @@
 -- count n umber of records
 SELECT count(name)
 from first_table
-where id = 98
+where id = 89
