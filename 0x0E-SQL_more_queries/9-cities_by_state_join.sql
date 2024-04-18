@@ -1,0 +1,5 @@
+-- script that lists all cities contained in the database hbtn_0d_usa
+select c.id, c.name,  s.name
+from cities as c join states as s
+on (c.state_id = s.id)
+order by c.id asc
