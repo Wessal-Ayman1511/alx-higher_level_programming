@@ -13,13 +13,11 @@ if __name__ == "__main__":
         charset="utf8"
     )
     cur = conn.cursor()
-    query = "SELECT c.id, c.name, s.name \
-            FROM cities as c, states as s \
-            WHERE c.state_id = s.id \
-            ORDER BY c.id ASC"
-    cur.execute(query)
+    query = "SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC"
+    cur.execute(query, (argv[4], ))
     records = cur.fetchall()
     for record in records:
-        print(record)
+        if record[1] == argv[4]:
+            print(record)
     cur.close()
     conn.close()
