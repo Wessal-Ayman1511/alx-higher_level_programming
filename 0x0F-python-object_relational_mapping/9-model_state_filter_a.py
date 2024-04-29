@@ -11,7 +11,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    contain_a = session.query(State).filter(State.name.contains('a')).order_by(State.id)
+    contain_a = session\
+        .query(State).filter(State.name.contains('a')).order_by(State.id)
     for row in contain_a:
         print(f"{row.id}: {row.name}")
     session.close()
