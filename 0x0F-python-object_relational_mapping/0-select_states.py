@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     )
     cur = con.cursor()
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
     records = cur.fetchall()
     for record in records:
         print(record)
