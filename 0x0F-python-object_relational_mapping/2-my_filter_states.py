@@ -17,6 +17,7 @@ if __name__ == "__main__":
     cur.execute(query.format(argv[4]))
     records = cur.fetchall()
     for record in records:
-        print(record)
+        if record[1] == argv[4]:
+            print(record)
     cur.close()
     conn.close()
