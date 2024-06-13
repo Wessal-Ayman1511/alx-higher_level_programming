@@ -93,8 +93,6 @@ class Rectangle(Base):
                 setattr(self, attr[i], arg)
                 i += 1
         else:
-            i = 0
-            for key, val in kwargs:
-                setattr(self, attr[i], key)
-            i += 1
+            for key, val in kwargs.items():
+                setattr(self, key, val)
  
