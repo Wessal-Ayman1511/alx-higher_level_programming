@@ -71,11 +71,13 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """ draw the rectangle """
+        """ displays a rectangle """
+        rectangle = self.y * "\n"
         for i in range(self.height):
-            for j in range(self.width):
-                print('#', end='')
-            print()
+            rectangle += (" " * self.x)
+            rectangle += ("#" * self.width) + "\n"
+
+        print(rectangle, end='')
 
     def __str__(self):
         """ str """
