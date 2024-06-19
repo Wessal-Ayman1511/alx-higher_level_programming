@@ -22,5 +22,6 @@ class Base:
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         else:
-            str_data = json.dumps(list_dictionaries)
-            return str_data
+            # str_data = json.dumps(list_dictionaries)
+            # return str_data
+            return json.dumps(list_dictionaries)
