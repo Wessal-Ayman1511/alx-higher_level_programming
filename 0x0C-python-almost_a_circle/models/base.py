@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''Module for Base class.'''
 
-from json import dumps
+import json
 
 
 class Base:
@@ -22,4 +22,5 @@ class Base:
         if list_dictionaries is None or not list_dictionaries:
             return "[]"
         else:
-            return dumps(list_dictionaries)
+            str_data = json.dumps(list_dictionaries)
+            return str_data
