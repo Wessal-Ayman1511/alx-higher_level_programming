@@ -2,6 +2,7 @@
 '''Module for Base class.'''
 
 import json
+import os
 
 
 class Base:
@@ -52,3 +53,15 @@ class Base:
             dummy = cls()
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        file_name = "{}.json".format(cls.__name__)
+        if not os.path.exists(file_name):
+            return []
+        else:
+            with open(file_name, "r", encoding="utf-8") as f:
+                str = f.read()
+        list_dic = cls.from_json_string(str)
+        list_obj = [cls.create(**d) for d in list_dic]
+        return list_obj
