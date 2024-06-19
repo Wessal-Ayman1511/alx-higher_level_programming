@@ -41,3 +41,14 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+        
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        elif cls.__name__ == "Square":
+            dummy = cls(1)
+        else:
+            dummy = cls()
+        dummy.update(**dictionary)
+        return dummy
