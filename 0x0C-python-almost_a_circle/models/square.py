@@ -32,9 +32,9 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """ update """
-        attr = ['id', 'width', 'height', 'x', 'y']
+        attr = ['id', 'size', 'x', 'y']
         if args is not None and len(args) is not 0:
-            i = 1
+            i = 0
             for arg in args:
                 setattr(self, attr[i], arg)
                 i += 1
